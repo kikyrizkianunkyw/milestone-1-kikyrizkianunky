@@ -1,14 +1,391 @@
-/* mobile */
-@media screen (max-width: 767px) {
-    
+body {
+    font-size: 1rem;
+    font-weight: 300;
+    color: black;
+    background-color: whitesmoke;
+    width: 100%;
 }
 
-/*tablet */
-@media screen (max-width: 768px) and (max-width: 1023px) {
-    
+@media (min-width: 1024px) {
+    main {
+        margin-top: none;
+    }
+
+    section {
+        padding: 0px;
+        width: 100%;
+    }
+
+/* Navbar */
+    .navbar {
+        height: 100vh;
+        z-index: 0;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: .9;
+        background-image: url('assets/beranda.jpg');
+        background-size: cover;
+    }
+
+    .navbarNav {
+        background-color: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-inline-end: 1rem;
+        padding-inline-start: 1rem;
+    }
+
+    .navbarCtr {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .navbarUl {
+        display: flex;
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: auto;
+        gap: 10px;
+        list-style: none;
+
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+
+    .navDiv1 {
+        display: flex;
+        margin-left: auto;
+        gap: 10px;
+    }
+
+    .navHeader h1{
+        color: whitesmoke;
+        padding: 2rem;
+        padding-left: 2.5rem;
+        line-height: 2rem;
+        font-size: 4rem;
+    }
+
+    .navHeader h2 {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        margin-left: 2rem;
+        line-height: 2rem;
+    }
+
 }
 
-/* pc */
-@media screen (min-width: 1024px) {
+
+/* Headers */
+@media (min-width: 1024px) {
+
+    .headerCtr {
+        display: flex;
+        align-items: center;
+        height: 550px;
+        justify-content: center;
+    }
+
+    .headerContent {
+        height: 400px;
+        width: 100%;
+        background-color: whitesmoke;
+    }
+
+    .headerContent p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: whitesmoke;
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+        padding: 2rem;
+        margin-top: 5rem;
+    }
+
+    .headerImg{
+        display: flex;
+        align-items: flex-start;
+        height: 80%;
+    }
+
+    .headerImg img {
+        width: 500px;
+        height: auto;
+        object-fit: cover;
+        padding-top: 50px;
     
+    }
+
 }
+
+
+/* About Us */
+@media (min-width: 1024px) {
+    .about {
+        
+        background: whitesmoke;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    
+    .aboutDiv1 {
+        position: relative;
+        padding: 2rem;
+        background-image: url('assets/flat-lay-assortment-with-salty-fruits.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+/* 
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: 1;
+    } */
+
+    .aboutStory {
+        
+        z-index: 2;
+        background-color: whitesmoke;
+        
+    }
+
+    .aboutStory h2 {
+        padding-top: 2rem;
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .aboutStory p {
+        font-size: 1.5rem;
+        padding: 2rem;
+        line-height: 2rem;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .aboutDiv1 img {
+        width: 50%;
+        height: auto;
+        
+    }
+
+    .aboutDiv2{
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    .aboutDiv2 h2{
+        margin-bottom: 30px;
+        font-size: 3rem;
+    }
+
+    .aboutDiv2 ul{
+        list-style: none;
+        line-height: 2rem;
+    }
+    
+    .ulFlexAbout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        padding-top: 0;
+        gap: 40px;
+    }
+
+    .listAbout {
+        background-color: #F0EEDE;
+        box-shadow: 10px 10px 15px rgba(164, 171, 162, 0.676);
+        border-radius: 25px;
+        height: 250px;
+        width: 210px;
+        display: block;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .listAbout li {
+        text-align: center;
+        padding-top: 0;
+        padding: 5px;
+    }
+
+    .listAbout h3 {
+        padding-top: 20px;
+        padding-bottom: 0;
+        margin-bottom: 1px;
+        font-size: 20px;
+    }
+}
+
+/* product */
+@media (min-width: 1024px) {
+    .product {
+        background: #a4c562;
+    }
+
+    .productCtr{
+        padding: 20px;
+        display: block;
+        text-align: center;
+    }
+    .productCtr h1 {
+        margin-top: 0;
+        font-size: 3rem;
+        padding-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    .productCtr p {
+        line-height: 1.8rem;
+        font-size: 20px;
+        padding-top: 0;
+        padding: 3rem;
+    }
+}
+
+/* career */
+@media (min-width: 1024px)  {
+    .career {
+        background: whitesmoke;
+    }
+
+    .career h1 {
+        margin-top: 0;
+    }
+
+    .careerCtr1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 3rem;
+        gap: 50px;
+    }
+
+    .careerCtr1 img {
+        width: 800px;
+        margin-right: 0;
+        display: flex;
+        justify-self: flex-end;
+    }
+
+    .careerCtr1 h1 {
+        font-size: 3rem;
+        padding-left: 1rem;
+        padding-right: 20px;
+    }
+
+    .careerCtr2 {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .careerCtr2 h2{
+        font-size: 3rem;
+        margin-bottom: 0px;
+    }
+
+    .careerCtr2 p {
+        line-height: 1.8rem;
+        font-size: 20px;
+        padding-top: 0px;
+        padding: 2rem;
+        margin-top: 0px;
+    }
+
+}
+
+
+/* contact */
+@media (min-width: 1024px)  {
+    
+    .mainContactCtr {
+        margin-top: 2rem;
+        background-color: #abb794;
+        height: 450px;
+    }
+    .contactCtr {    
+        /* background-color: #; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 16px;
+        grid-auto-rows: 320px 320px;
+        padding: 2rem;
+    }
+
+    .contactItem1 p{
+        justify-content: left;
+        text-align: justify;
+        line-height: 1.5rem;
+        font-size: 1.1rem;
+        font-family: serif;
+        
+    }
+
+    #contactDivItem1 {
+        margin-top: 4rem;
+    }
+
+    #contactDivItem1 p{
+        margin-bottom: 1px;
+        margin-top: 0px;
+    
+    }
+
+    .contactP1 {
+        font-weight: bold;
+    
+    }
+
+
+    .listContact {
+        padding-left: 4rem;
+    }
+
+    .liContact  {
+        list-style: none;
+        line-height: 2rem;
+        font-family: serif;
+    }
+
+    #helpContact {
+        font-weight: bold;
+        font-family: serif;
+        display: flex;
+        justify-content: start;
+        padding-left: 3rem;
+    }
+}
+    
+
