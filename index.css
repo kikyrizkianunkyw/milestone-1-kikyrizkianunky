@@ -1,9 +1,19 @@
 body {
     font-size: 1rem;
     font-weight: 300;
+    font-family: "Prata", serif;
     color: black;
     background-color: whitesmoke;
     width: 100%;
+}
+
+p {
+    font-family: "Prata", serif;
+    
+}
+
+li {
+    font-family: "Prata", serif;
 }
 
 @media (min-width: 1024px) {
@@ -44,7 +54,18 @@ body {
         align-items: center;
         padding: 0.5rem;
         width: 100%;
+        font-weight: 900;
+        color: #034620;
+        text-shadow: 2px 2px 5px rgba(255, 255, 250, 0.785);
+
     }
+
+    .navA img{
+        width: 160px;
+        height: auto;
+    }
+
+
 
     .navbarUl {
         display: flex;
@@ -77,11 +98,13 @@ body {
     }
 
     .navHeader h2 {
+        color: whitesmoke;
         width: 50%;
         height: 50%;
         display: flex;
         margin-left: 2rem;
-        line-height: 2rem;
+        line-height: 2.1rem;
+        font-size: 20px;
     }
 
 }
