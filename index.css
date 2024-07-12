@@ -713,18 +713,40 @@ section {
     .mainContactCtr {
         padding: 1rem;
         background-color: #abb794;
+        font-size: 10px;
+        line-height: 1.3rem;
+        text-align: justify;
     }
 
     .contactCtr {
         display: block;
     }
 
-    .contactItem1 p, .listContact {
+    .contactItem1 , .listContact {
         padding: 1rem;
+        padding-top: 0px;
     }
 
     #contactDivItem1 {
         margin-top: 1rem;
+    }
+
+    #contactDivItem1 p{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .contactP1 {
+        padding-left: 0px;
+    }
+
+    .helpContact {
+        padding-left: 16px;
+        font-weight: 500;
+    }
+
+    .contactP2 {
+        padding-bottom: 0px;
     }
 }
 
