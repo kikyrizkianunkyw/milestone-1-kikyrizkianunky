@@ -7,26 +7,27 @@ body {
     width: 100%;
 }
 
-p {
-    font-family: "Prata", serif;
-    
-}
-
-li {
+p, li {
     font-family: "Prata", serif;
 }
 
-@media (min-width: 1024px) {
-    main {
-        margin-top: none;
-    }
+ul {
+    list-style: none;
+}
 
-    section {
-        padding: 0px;
-        width: 100%;
-    }
+main {
+    margin-top: none;
+}
+
+section {
+    padding: 0px;
+    width: 100%;
+}
+
 
 /* Navbar */
+@media (min-width: 1024px) {
+
     .navbar {
         height: 100vh;
         z-index: 0;
@@ -57,15 +58,12 @@ li {
         font-weight: 900;
         color: #034620;
         text-shadow: 2px 2px 5px rgba(255, 255, 250, 0.785);
-
     }
 
-    .navA img{
+    .navA img {
         width: 160px;
         height: auto;
     }
-
-
 
     .navbarUl {
         display: flex;
@@ -75,7 +73,6 @@ li {
         margin-left: auto;
         gap: 10px;
         list-style: none;
-
         margin-block-start: 1em;
         margin-block-end: 1em;
         margin-inline-start: 0px;
@@ -89,7 +86,7 @@ li {
         gap: 10px;
     }
 
-    .navHeader h1{
+    .navHeader h1 {
         color: whitesmoke;
         padding: 2rem;
         padding-left: 2.5rem;
@@ -106,11 +103,95 @@ li {
         line-height: 2.1rem;
         font-size: 20px;
     }
+}
 
+@media (max-width: 767px) {
+    .navbar {
+        height: auto;
+        z-index: 0;
+        background-image: url('assets/beranda.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 1rem;
+        opacity: 0.9;
+    }
+
+    .navbarNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navA img {
+        width: 120px;
+        height: auto;
+    }
+
+    .navbarUl {
+        display: none;
+    }
+
+    .navHeader h1 {
+        color: whitesmoke;
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+
+    .navHeader h2 {
+        color: whitesmoke;
+        text-align: center;
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar {
+        height: auto;
+        z-index: 0;
+        background-image: url('assets/beranda.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 1rem;
+        opacity: 0.9;
+    }
+
+    .navbarNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navA img {
+        width: 140px;
+        height: auto;
+    }
+
+    .navbarUl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navHeader h1 {
+        color: whitesmoke;
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 1rem 0;
+    }
+
+    .navHeader h2 {
+        color: whitesmoke;
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 0 1rem;
+    }
 }
 
 
-/* Headers */
+/* ------------------HEADER-----------------------*/
+
 @media (min-width: 1024px) {
 
     .headerCtr {
@@ -126,7 +207,7 @@ li {
         background-color: whitesmoke;
     }
 
-    .headerContent p{
+    .headerContent p {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -138,7 +219,7 @@ li {
         margin-top: 5rem;
     }
 
-    .headerImg{
+    .headerImg {
         display: flex;
         align-items: flex-start;
         height: 80%;
@@ -149,25 +230,67 @@ li {
         height: auto;
         object-fit: cover;
         padding-top: 50px;
-    
+    }
+}
+
+@media (max-width: 767px) {
+    .headerCtr {
+        display: block;
+        text-align: center;
+        padding: 1rem;
     }
 
+    .headerContent {
+        background-color: whitesmoke;
+        padding: 1rem;
+    }
+
+    .headerContent p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .headerImg img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .headerCtr {
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .headerContent {
+        background-color: whitesmoke;
+        padding: 1.5rem;
+    }
+
+    .headerContent p {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+
+    .headerImg img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 
-/* About Us */
+/* ------------------ABOUT US-----------------------*/
 @media (min-width: 1024px) {
     .about {
-        
         background: whitesmoke;
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 2rem;
         align-items: center;
         justify-content: center;
-       
     }
-    
+
     .aboutDiv1 {
         position: relative;
         padding: 2rem;
@@ -179,20 +302,10 @@ li {
         justify-content: center;
         align-items: center;
     }
-/* 
-    .overlay {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.5);
-        z-index: 1;
-    } */
 
     .aboutStory {
-        
         z-index: 2;
         background-color: whitesmoke;
-        
     }
 
     .aboutStory h2 {
@@ -214,24 +327,23 @@ li {
     .aboutDiv1 img {
         width: 50%;
         height: auto;
-        
     }
 
-    .aboutDiv2{
+    .aboutDiv2 {
         padding-top: 2rem;
         text-align: center;
     }
 
-    .aboutDiv2 h2{
+    .aboutDiv2 h2 {
         margin-bottom: 30px;
         font-size: 3rem;
     }
 
-    .aboutDiv2 ul{
+    .aboutDiv2 ul {
         list-style: none;
         line-height: 2rem;
     }
-    
+
     .ulFlexAbout {
         display: flex;
         justify-content: center;
@@ -266,17 +378,124 @@ li {
     }
 }
 
-/* product */
+@media (max-width: 767px) {
+
+    .about {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .aboutDiv1 {
+        background-image: url('assets/flat-lay-assortment-with-salty-fruits.jpg');
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .aboutStory {
+        background-color: whitesmoke;
+        padding: 1rem;
+    }
+
+    .aboutStory h2 {
+        font-size: 2rem;
+    }
+
+    .aboutStory p {
+        font-size: 1rem;
+    }
+
+    .aboutDiv2 h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .ulFlexAbout {
+        display: block;
+        padding-left: 0px;
+    }
+
+    .listAbout {
+        background-color: #F0EEDE;
+        box-shadow: 10px 10px 15px rgba(164, 171, 162, 0.676);
+        border-radius: 25px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .listAbout h3 {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .about {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .aboutDiv1 {
+        background-image: url('assets/flat-lay-assortment-with-salty-fruits.jpg');
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        padding: 1.5rem;
+        position: relative;
+    }
+
+    .aboutStory {
+        background-color: whitesmoke;
+        padding: 1.5rem;
+    }
+
+    .aboutStory h2 {
+        font-size: 2.5rem;
+    }
+
+    .aboutStory p {
+        font-size: 1.2rem;
+    }
+
+    .aboutDiv2 h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .ulFlexAbout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listAbout {
+        background-color: #F0EEDE;
+        box-shadow: 10px 10px 15px rgba(164, 171, 162, 0.676);
+        border-radius: 25px;
+        padding: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .listAbout h3 {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* ------------------ PRODUCT -----------------------*/
 @media (min-width: 1024px) {
     .product {
         background: #a4c562;
     }
 
-    .productCtr{
+    .productCtr {
         padding: 20px;
         display: block;
         text-align: center;
     }
+
     .productCtr h1 {
         margin-top: 0;
         font-size: 3rem;
@@ -292,8 +511,42 @@ li {
     }
 }
 
-/* career */
-@media (min-width: 1024px)  {
+@media (max-width: 767px) {
+
+    .productCtr {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .productCtr h1 {
+        font-size: 2rem;
+    }
+
+    .productCtr p {
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .productCtr {
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .productCtr h1 {
+        font-size: 2.5rem;
+    }
+
+    .productCtr p {
+        font-size: 1.2rem;
+        padding: 1.2rem 0;
+    }
+}
+
+
+/* ------------------CAREER-----------------------*/
+@media (min-width: 1024px) {
     .career {
         background: whitesmoke;
     }
@@ -334,7 +587,7 @@ li {
         margin-bottom: 0;
     }
 
-    .careerCtr2 h2{
+    .careerCtr2 h2 {
         font-size: 3rem;
         margin-bottom: 0px;
     }
@@ -346,20 +599,66 @@ li {
         padding: 2rem;
         margin-top: 0px;
     }
-
 }
 
+@media (max-width: 767px) {
 
-/* contact */
-@media (min-width: 1024px)  {
-    
+    .careerCtr1 {
+        padding: 1rem;
+    }
+
+    .careerCtr1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .careerCtr2 {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .careerCtr2 h2 {
+        font-size: 1.5rem;
+    }
+
+    .careerCtr2 p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .careerCtr1 {
+        padding: 1.5rem;
+    }
+
+    .careerCtr1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .careerCtr2 {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .careerCtr2 h2 {
+        font-size: 1.8rem;
+    }
+
+    .careerCtr2 p {
+        font-size: 1.2rem;
+    }
+}
+
+/* ------------------CONTACT-----------------------*/
+@media (min-width: 1024px) {
     .mainContactCtr {
         margin-top: 2rem;
         background-color: #abb794;
         height: 450px;
     }
-    .contactCtr {    
-        /* background-color: #; */
+
+    .contactCtr {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 16px;
@@ -367,36 +666,32 @@ li {
         padding: 2rem;
     }
 
-    .contactItem1 p{
+    .contactItem1 p {
         justify-content: left;
         text-align: justify;
         line-height: 1.5rem;
         font-size: 1.1rem;
         font-family: serif;
-        
     }
 
     #contactDivItem1 {
         margin-top: 4rem;
     }
 
-    #contactDivItem1 p{
+    #contactDivItem1 p {
         margin-bottom: 1px;
         margin-top: 0px;
-    
     }
 
     .contactP1 {
         font-weight: bold;
-    
     }
-
 
     .listContact {
         padding-left: 4rem;
     }
 
-    .liContact  {
+    .liContact {
         list-style: none;
         line-height: 2rem;
         font-family: serif;
@@ -408,7 +703,70 @@ li {
         display: flex;
         justify-content: start;
         padding-left: 3rem;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
-    
 
+@media (max-width: 767px) {
+
+    .mainContactCtr {
+        padding: 1rem;
+        background-color: #abb794;
+    }
+
+    .contactCtr {
+        display: block;
+    }
+
+    .contactItem1 p, .listContact {
+        padding: 1rem;
+    }
+
+    #contactDivItem1 {
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .mainContactCtr {
+        padding: 1.5rem;
+        background-color: #abb794;
+    }
+
+    .contactCtr {
+        display: block;
+    }
+
+    .contactItem1 p, .listContact {
+        padding: 1.5rem;
+    }
+
+    #contactDivItem1 {
+        margin-top: 1.5rem;
+    }
+}
+
+/* ------------------FOOTER-----------------------*/
+@media (min-width: 1024px) {
+    footer p {
+        justify-content: center;
+        text-align: center;
+        font-family: serif;
+    }
+}
+
+@media (max-width: 767px) {
+    footer p {
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    footer p {
+        padding: 1.5rem;
+        text-align: center;
+    }
+}
