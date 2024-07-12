@@ -503,11 +503,17 @@ section {
         margin-bottom: 0;
     }
 
+    .productCtr h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
     .productCtr p {
         line-height: 1.8rem;
         font-size: 20px;
         padding-top: 0;
         padding: 3rem;
+        padding-top: 10px;
     }
 }
 
@@ -697,12 +703,12 @@ section {
         font-family: serif;
     }
 
-    #helpContact {
+    .helpContact {
         font-weight: bold;
         font-family: serif;
         display: flex;
         justify-content: start;
-        padding-left: 3rem;
+        padding-left: 4rem;
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -742,7 +748,9 @@ section {
 
     .helpContact {
         padding-left: 16px;
-        font-weight: 500;
+        font-weight: bold;
+        font-family: serif;
+        
     }
 
     .contactP2 {
@@ -764,9 +772,37 @@ section {
         padding: 1.5rem;
     }
 
+    .contactP2 {
+        padding-bottom: 0px;
+    }
+
     #contactDivItem1 {
         margin-top: 1.5rem;
     }
+
+    #contactDivItem1 p{
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .helpContact {
+        font-weight: bold;
+        font-family: serif;
+        display: flex;
+        justify-content: start;
+        padding-left: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    .listContact {
+        padding-top: 0px;
+    }
+
+    .liContact {
+        padding-bottom: 1rem;
+    }
+   
 }
 
 /* ------------------FOOTER-----------------------*/
