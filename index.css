@@ -21,8 +21,9 @@ main {
 
 section {
     padding: 0px;
-    width: 100%;
+    
 }
+
 
 
 /* Navbar */
@@ -92,6 +93,7 @@ section {
         padding-left: 2.5rem;
         line-height: 2rem;
         font-size: 4rem;
+        text-shadow: 2px 2px 9px rgba(115, 137, 74, 0.785);
     }
 
     .navHeader h2 {
@@ -134,14 +136,15 @@ section {
     .navHeader h1 {
         color: whitesmoke;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding: 1rem 0;
+        text-shadow: 2px 2px 9px rgba(115, 137, 74, 0.785);
     }
 
     .navHeader h2 {
         color: whitesmoke;
         text-align: center;
-        font-size: 1rem;
+        font-size: 15px;
         padding: 0 1rem;
     }
 }
@@ -168,10 +171,34 @@ section {
         height: auto;
     }
 
+    .navbarCtr{
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        width: 100%;
+        font-weight: 900;
+        color: #034620;
+        text-shadow: 2px 2px 5px rgba(255, 255, 250, 0.785);
+    }
+
+    .navDiv1 {
+        padding-left: 270px;
+        font-size: 0.8rem;
+    }
+
     .navbarUl {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: auto;
+        gap: 10px;
+        list-style: none;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
     }
 
     .navHeader h1 {
@@ -179,12 +206,13 @@ section {
         text-align: center;
         font-size: 2.5rem;
         padding: 1rem 0;
+        text-shadow: 2px 2px 9px rgba(115, 137, 74, 0.785);
     }
 
     .navHeader h2 {
         color: whitesmoke;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 18px;
         padding: 0 1rem;
     }
 }
@@ -811,6 +839,7 @@ section {
         justify-content: center;
         text-align: center;
         font-family: serif;
+        font-size: 15px;
     }
 }
 
@@ -818,6 +847,7 @@ section {
     footer p {
         padding: 1rem;
         text-align: center;
+        font-size: 10px;
     }
 }
 
@@ -826,5 +856,6 @@ section {
     footer p {
         padding: 1.5rem;
         text-align: center;
+        font-size: 12px;
     }
 }
